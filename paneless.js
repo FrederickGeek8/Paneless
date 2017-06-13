@@ -198,11 +198,3 @@
     }
   };
 })(jQuery, window, document);
-
-$('.workspace').paneless();
-$('.poo').click(function() {
-  $('.workspace').paneless('split', this, 'left');
-});
-$('.poo2').click(function() {
-  $('.workspace').paneless('split', this, 'up');
-});

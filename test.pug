@@ -28,4 +28,12 @@ html
         .item(style='background:green')
           a Dang
     script(src='jquery.min.js')
-    script(src='index.js')
+    script(src='paneless.js')
+    script(type='text/javascript')
+      | $('.workspace').paneless();
+      | $('.poo').click(function() {
+      |   $('.workspace').paneless('split', this, 'left');
+      | });
+      | $('.poo2').click(function() {
+      |   $('.workspace').paneless('split', this, 'up');
+      | });

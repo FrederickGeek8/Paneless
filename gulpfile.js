@@ -24,3 +24,5 @@ gulp.task('default', function() {
   gulp.watch('*.pug',['pug']);
   gulp.watch('*.js',['scripts']);
 });
+
+gulp.task('build', ['styles', 'pug', 'scripts']);
