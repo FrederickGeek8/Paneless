@@ -1,0 +1,28 @@
+{
+  "name": "paneless",
+  "version": "0.1.0",
+  "description": "A painless jQuery Plugin for panes. Similar to Atom's Pane system.",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-pug": "^3.3.0",
+    "gulp-sass": "^3.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FrederickGeek8/Paneless.js.git"
+  },
+  "author": "Frederick Morlock",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FrederickGeek8/Paneless.js/issues"
+  },
+  "homepage": "https://github.com/FrederickGeek8/Paneless.js#readme"
+}

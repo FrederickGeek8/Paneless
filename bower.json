@@ -1,0 +1,22 @@
+{
+  "name": "paneless",
+  "description": "A painless jQuery Plugin for panes. Similar to Atom's Pane system.",
+  "main": "paneless.js",
+  "authors": [
+    "Frederick Morlock"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "pane",
+    "split",
+    "resizing"
+  ],
+  "homepage": "https://github.com/FrederickGeek8/Paneless.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

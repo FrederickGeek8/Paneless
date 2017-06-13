@@ -1,26 +1,26 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-var jade = require('gulp-jade');
+var pug = require('gulp-pug');
 
 gulp.task('styles', function() {
   gulp.src('*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./dist'));
+    .pipe(gulp.dest('./test'));
 });
 
-gulp.task('jade', function() {
-  gulp.src('*.jade')
-    .pipe(jade()) // pip to jade plugin
-    .pipe(gulp.dest('./dist/')); // tell gulp our output folder
+gulp.task('pug', function() {
+  gulp.src('*.pug')
+    .pipe(pug()) // pip to pug plugin
+    .pipe(gulp.dest('./test/')); // tell gulp our output folder
 });
 
 gulp.task('scripts', function() {
   gulp.src('*.js', {base: './'})
-  .pipe(gulp.dest('./dist/'));
+  .pipe(gulp.dest('./test/'));
 });
 
 gulp.task('default', function() {
   gulp.watch('*.scss',['styles']);
-  gulp.watch('*.jade',['jade']);
+  gulp.watch('*.pug',['pug']);
   gulp.watch('*.js',['scripts']);
 });
